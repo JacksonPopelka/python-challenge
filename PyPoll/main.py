@@ -81,7 +81,7 @@ with open(file_to_output, "w") as txt_file:
         txt_file.write(candidate_results)
 
     # Generate and print the winning candidate summary
-    winning_candidate_summary = (float(winning_count) / float(total_votes)) * 100
+    winning_candidate_summary = (winning_count / total_votes) * 100
     winning_candidate_summary = (
         f"------------------------------------\n"
         f"Winner: {winning_candidate}\n"
